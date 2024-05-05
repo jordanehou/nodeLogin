@@ -18,3 +18,5 @@ npm install mocha chai chai-http --save-dev
 
 npm install puppeteer --save-dev
 
+npx mocha test/end-to-end.test.mjs
+
