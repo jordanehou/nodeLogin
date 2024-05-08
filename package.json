@@ -1,11 +1,12 @@
 {
   "name": "my-app",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Creating node application with login screen and testing it using Selenium",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.cjs",
+    "test": "npx mocha test/end-to-end.test.mjs"
   },
   "author": "Utrains",
   "license": "ISC",

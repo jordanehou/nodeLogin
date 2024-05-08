@@ -1,22 +1,16 @@
-# nodeLogin
-Creating node application with login screen and testing it using Selenium
+# make sure node pakage is installed 
+npm install
+npm start
+# to package the application 
 
-# initializing the node application
- npm init
+npm pack     # you can change the name and the version of the artefact in package.json file
 
-# install web framework
+# to run application from the package ( *.tgz)
+wget <Url of package>
+tar -xzf your-package-name.tgz
+cd your-package-name
+npm install
+npm start
 
-npm install express
 
-# Running the application
-
-node index.js
-
-# testing the application
-
-npm install mocha chai chai-http --save-dev
-
-npm install puppeteer --save-dev
-
-npx mocha test/end-to-end.test.mjs
 
