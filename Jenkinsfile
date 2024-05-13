@@ -19,10 +19,17 @@ pipeline {
             }
         }
 
-         // Package application stage
+         // Package application stage : create the tgz file 
         stage('Pack_APP') {
             steps {
                 sh 'npm pack'
+            }
+        }
+
+        // Push package to Artifactory
+        stage('Push_APP_To_Artifactory') {
+            steps {
+                sh 'echo push stage'
             }
         }
     }
