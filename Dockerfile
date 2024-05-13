@@ -9,6 +9,10 @@ RUN tar -xzf my-app-1.2.0.tgz && \
     rm -rf package && \
     npm install
 
+
+# Run tests
+RUN npm test
+    
 EXPOSE 3000
 
 CMD ["npm", "start"]
