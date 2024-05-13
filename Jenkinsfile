@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:20.11.1-alpine3.19' }
+        docker { image node:14 }
     }
     // set up environment
     environment {
@@ -16,9 +16,9 @@ pipeline {
         stage('Install_APP') {
             steps {
                 //sh 'npm install'
-                sh 'export PUPPETEER_SKIP_DOWNLOAD=true'
+                //sh 'export PUPPETEER_SKIP_DOWNLOAD=true'
 
-                git branch: 'main', url: 'https://github.com/utrains/nodeLogin.git'
+                //git branch: 'main', url: 'https://github.com/utrains/nodeLogin.git'
 
                 // Install dependencies and build the Node.js app
                 sh 'npm install'
