@@ -1,4 +1,5 @@
 # make sure node pakage is installed 
+```bash
 npm install --save use-clipboard-copy <br>
 npm start<br>
 # to package the application 
