@@ -16,8 +16,9 @@ pipeline {
         stage('Install_APP') {
             steps {
                 //sh 'npm install'
+                sh 'export PUPPETEER_SKIP_DOWNLOAD=true'
 
-                 git branch: 'main', url: 'https://github.com/utrains/nodeLogin.git'
+                git branch: 'main', url: 'https://github.com/utrains/nodeLogin.git'
 
                 // Install dependencies and build the Node.js app
                 sh 'npm install'
