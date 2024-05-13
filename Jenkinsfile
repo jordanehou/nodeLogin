@@ -18,5 +18,12 @@ pipeline {
                 sh 'npm install'
             }
         }
+
+         // Start application stage
+        stage('Start_APP') {
+            steps {
+                sh 'npm start'
+            }
+        }
     }
 }
