@@ -15,8 +15,9 @@ pipeline {
         // install application stage
         stage('Install_APP') {
             steps {
-                // Checkout your Node.js application code from Git
-                git 'https://github.com/utrains/nodeLogin.git'
+                //sh 'npm install'
+
+                 git branch: 'main', url: 'https://github.com/your/repo.git'
 
                 // Install dependencies and build the Node.js app
                 sh 'npm install'
