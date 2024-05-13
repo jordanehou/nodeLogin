@@ -17,7 +17,7 @@ pipeline {
             steps {
                 //sh 'npm install'
 
-                 git branch: 'main', url: 'https://github.com/your/repo.git'
+                 git branch: 'main', url: 'https://github.com/utrains/nodeLogin.git'
 
                 // Install dependencies and build the Node.js app
                 sh 'npm install'
