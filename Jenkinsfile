@@ -19,10 +19,10 @@ pipeline {
             }
         }
 
-         // Start application stage
-        stage('Start_APP') {
+         // Package application stage
+        stage('Pack_APP') {
             steps {
-                sh 'npm start'
+                sh 'npm pack'
             }
         }
     }
