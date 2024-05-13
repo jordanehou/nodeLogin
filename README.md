@@ -1,23 +1,44 @@
-# make sure node pakage is installed 
-```bash
+## Deployment Steps for node js App
+
+Install Dependencies:
+```
 npm install 
-
+```
+Start the Application:
+```
 npm start
-# to package the application 
+```
 
-npm pack     # you can change the name and the version of the artefact in package.json file
+To package the application(The version is in package.json file): 
+```
+npm pack     
+```
 
-# to run application from the package ( *.tgz)
+## To run application from the package ( *.tgz):
 
+Download the package from artefactory:
+```
 wget Url of package from JFrog artefactory 
+```
 
+Extract the package:
+```
 tar -xzf your-package-name.tgz
-
+```
+Go to the source file:
+```
 cd your-package-name 
+```
 
+Install Dependencies:
+```
 npm install
+```
 
+Start the Application:
+```
 npm start
+```
 
 
 
